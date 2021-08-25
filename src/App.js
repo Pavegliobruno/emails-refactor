@@ -4,7 +4,7 @@ import {Input, Popover, Button, Typography} from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 const {TextArea} = Input;
-const {Paragraph, Text} = Typography;
+const {Paragraph} = Typography;
 
 function App() {
 	const [state, setState] = useState('');
