@@ -18,7 +18,7 @@ function App() {
 			<header className='App-header'>
 				<TextArea
 					rows={10}
-					placeholder='Pegá los emails aquí.'
+					placeholder='Pegá los emails aquí uno debajo del otro.'
 					onChange={onChange}
 				/>
 
