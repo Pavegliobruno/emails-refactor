@@ -4,7 +4,7 @@ import {Input, Popover, Button, Typography} from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 const {TextArea} = Input;
-const {Paragraph} = Typography;
+const {Paragraph, Text} = Typography;
 
 function App() {
 	const [state, setState] = useState('');
@@ -23,6 +23,7 @@ function App() {
 				/>
 				{state.length > 0 ? (
 					<Popover
+						placement='bottom'
 						content={<Paragraph copyable>{state}</Paragraph>}
 						title='Emails acomodados:'
 						trigger='click'
