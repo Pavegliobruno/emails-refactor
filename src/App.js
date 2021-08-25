@@ -21,17 +21,20 @@ function App() {
 					placeholder='Pegá los emails aquí uno debajo del otro.'
 					onChange={onChange}
 				/>
-				{state.length > 0 ? (
-					<Popover
-						placement='bottom'
-						content={<Paragraph copyable>{state}</Paragraph>}
-						title='Emails acomodados:'
-						trigger='click'
-					>
-						<Button>Acomodar!</Button>
-					</Popover>
-				) : null}
+				<Popover
+					placement='bottom'
+					content={
+						<Paragraph copyable>
+							{state.includes('@') ? state : 'No hay ningun e-mail'}
+						</Paragraph>
+					}
+					title='Emails acomodados:'
+					trigger='click'
+				>
+					{state.length > 0 ? <Button>¡Acomodar!</Button> : null}
+				</Popover>
 			</header>
+			<h6 className='footer'>Hecho con mucho 💖 por Bruno para Alejo.</h6>
 		</div>
 	);
 }

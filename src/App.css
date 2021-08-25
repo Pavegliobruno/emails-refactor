@@ -12,6 +12,13 @@
 
 .App-header {
 	width: 75%;
+	height: 90%;
+	margin-top: auto;
+}
+
+.footer {
+	margin-top: auto;
+	color: white;
 }
 
 .App-link {
