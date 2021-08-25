@@ -21,14 +21,15 @@ function App() {
 					placeholder='Pegá los emails aquí uno debajo del otro.'
 					onChange={onChange}
 				/>
-
-				<Popover
-					content={<Paragraph copyable>{state}</Paragraph>}
-					title='Emails acomodados:'
-					trigger='click'
-				>
-					<Button>Acomodar!</Button>
-				</Popover>
+				{state.length > 0 ? (
+					<Popover
+						content={<Paragraph copyable>{state}</Paragraph>}
+						title='Emails acomodados:'
+						trigger='click'
+					>
+						<Button>Acomodar!</Button>
+					</Popover>
+				) : null}
 			</header>
 		</div>
 	);
